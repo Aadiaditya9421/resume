@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Singh - Resume</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                margin: 0;
+                padding: 20px;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+        
+        .links {
+            font-size: 11px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            margin-bottom: 10px;
+            padding-bottom: 2px;
+        }
+        
+        .education-item, .project-item {
+            margin-bottom: 12px;
+        }
+        
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3px;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .italic {
+            font-style: italic;
+        }
+        
+        .text-sm {
+            font-size: 11px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        ul li {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+        
+        .skills-section div {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+        
+        .certifications-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        .certifications-list li {
+            font-size: 11px;
+            margin-bottom: 3px;
+        }
+        
+        .social-item {
+            font-size: 11px;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>ADITYA SINGH</h1>
+            <div class="contact-info">Roll No. 23052212 | +91 9421499026</div>
+            <div class="links">
+                <a href="mailto:aadiadityasingh9421@gmail.com">📧 aadiadityasingh9421@gmail.com</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/aditya-singh-aadi/" target="_blank">🔗 LinkedIn</a>
+                <span>|</span>
+                <a href="https://github.com/Aadiaditya9421" target="_blank">💻 GitHub</a>
+                <span>|</span>
+                <a href="https://www.hackerrank.com/profile/aadiadityasingh1" target="_blank">👨‍💻 HackerRank</a>
+                <span>|</span>
+                <a href="https://leetcode.com/u/aadiadityasingh1/" target="_blank">🧩 LeetCode</a>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="education-item">
+                <div class="flex-row bold text-sm">
+                    <span>Kalinga Institute of Industrial Technology</span>
+                    <span>Expected July 2027</span>
+                </div>
+                <div class="flex-row italic text-sm">
+                    <span>Bachelor of Engineering in Computer Science and Engineering (CGPA: 8.01 / 10.00)</span>
+                    <span>Bhubaneswar, Odisha</span>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="flex-row bold text-sm">
+                    <span>Indian Institute of Technology Madras</span>
+                    <span>Expected July 2027</span>
+                </div>
+                <div class="flex-row italic text-sm">
+                    <span>Bachelor of Science in Data Science and Application (CGPA: 6.58 / 10.00)</span>
+                    <span>Online</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Projects</div>
+            
+            <div class="project-item">
+                <div class="flex-row">
+                    <div class="bold text-sm">LexAssist AI | LangGraph, ChromaDB, Groq, Streamlit, Python</div>
+                    <div class="bold text-sm">Jan 2025</div>
+                </div>
+                <ul>
+                    <li>Built an agentic RAG system for Indian legal information using LangGraph StateGraph with 10-node pipeline including memory, router, retrieval, grading, and evaluation nodes for hallucination-free responses.</li>
+                    <li>Designed vector database architecture with ChromaDB storing 12 legal documents (IPC, CrPC, Constitution, RTI Act, Labour Law) using HuggingFace embeddings, achieving mean faithfulness score of 0.80+ with 90%+ router accuracy.</li>
+                    <li>Deployed end-to-end Streamlit application with Groq Llama 3.3 70B integration, implementing citation-backed answers with automatic fallback on out-of-domain queries and < 8s mean response latency.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-row">
+                    <div class="bold text-sm">eUdyaan Mental Wellness Platform | Node.js, Express, MongoDB, Groq API</div>
+                    <div class="bold text-sm">Nov 2024</div>
+                </div>
+                <ul>
+                    <li>Developed AI chatbot backend with Groq LLaMA 3.1 8B integration featuring risk categorization (none/self-harm/violence) and HMAC-based anonymous IDs using SHA256 for user privacy protection.</li>
+                    <li>Engineered secure authentication system with bcrypt password hashing, JWT session tokens with MongoDB TTL auto-expiry, and rate limiting (10 login attempts/15 min, 5 signup attempts/hour) reducing unauthorized access by 100%.</li>
+                    <li>Implemented comprehensive admin dashboard with real-time analytics, community post management with HTML sanitization for XSS prevention, and appointment booking with past-date validation.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-row">
+                    <div class="bold text-sm">AgriAI Assist (HACK4IMPACT) | React, FastAPI, PyTorch, XGBoost</div>
+                    <div class="bold text-sm">Jan 2025</div>
+                </div>
+                <ul>
+                    <li>Built AI-powered crop disease detection system using ResNet50 model trained on 38 disease classes with Hugging Face model hosting, achieving real-time inference for Indian farmers.</li>
+                    <li>Developed full-stack application with React frontend and FastAPI backend, integrating PyTorch for disease classification and XGBoost for crop yield prediction based on rainfall, fertilizer, and pesticide inputs.</li>
+                    <li>Deployed production-ready system with fallback mechanisms for model unavailability, multipart image upload handling, and remedy generation API integration for detected diseases.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-row">
+                    <div class="bold text-sm">Veridex AI Authentication | Vanilla JavaScript, Groq LLaMA 3.3 70B</div>
+                    <div class="bold text-sm">Jan 2026</div>
+                </div>
+                <ul>
+                    <li>Created AI content authentication tool detecting AI-generated images and text in under 3 seconds using Groq vision API with 25 AI signals and 23 human signals for pattern scoring.</li>
+                    <li>Implemented dual-mode analysis system: local heuristic scoring (pixel entropy, compression artifacts, EXIF integrity) for images and Groq-powered sentence-level classification for text with highlight visualization.</li>
+                    <li>Engineered modular ES6 architecture with 5 specialized modules (groq.js, ui.js, imageAnalyzer.js, textAnalyzer.js, main.js) and ring gauge animations for real-time score visualization, deployed as static web application.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-row">
+                    <div class="bold text-sm">Hospital Management System | Flask, SQLite, Bootstrap, Chart.js, Python</div>
+                    <div class="bold text-sm">Nov 2025</div>
+                </div>
+                <ul>
+                    <li>Built full-stack web application with role-based access control for Admin, Doctor, and Patient roles, implementing secure authentication and authorization mechanisms using Flask session management.</li>
+                    <li>Designed smart appointment booking system with conflict prevention algorithms, reducing scheduling conflicts by 100% through SQLite database constraints and server-side validation logic.</li>
+                    <li>Developed analytics dashboards using Chart.js providing real-time insights into hospital operations, patient statistics, and appointment trends for data-driven decision making.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-section">
+                <div><span class="bold">Languages:</span> Python, JavaScript, Java, C++, SQL, HTML, CSS</div>
+                <div><span class="bold">Frameworks & Libraries:</span> Flask, FastAPI, Node.js, Express, React, Streamlit, PyTorch, XGBoost, LangChain, LangGraph, Bootstrap, Chart.js</div>
+                <div><span class="bold">Databases & Storage:</span> MongoDB, SQLite, ChromaDB (Vector DB), Mongoose ODM</div>
+                <div><span class="bold">AI/ML Tools:</span> Groq API, HuggingFace Transformers, OpenAI API, Scikit-learn, TensorFlow</div>
+                <div><span class="bold">Developer Tools:</span> Git, Docker, Postman, Jupyter Notebook, VS Code, Google Workspace</div>
+                <div><span class="bold">Concepts:</span> Agentic AI (RAG, LangGraph), Web Development, RESTful APIs, Authentication & Authorization (JWT, bcrypt), Machine Learning, Deep Learning, Vector Databases, Rate Limiting, Data Visualization, Responsive Design, Agile Methodology</div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">Certifications</div>
+            <ul class="certifications-list">
+                <li>Responsive Web Design Certificate</li>
+                <li>SQL (Basic) Certificate</li>
+                <li>SQL (Intermediate) Certificate</li>
+                <li>Introduction to IoT Certificate</li>
+            </ul>
+        </div>
+
+        <!-- Social Engagements -->
+        <div class="section">
+            <div class="section-title">Social Engagements</div>
+            <div class="social-item"><span class="bold">Club Member:</span> KAEWS Marketing Team at KIIT University</div>
+            <div class="social-item"><span class="bold">Sports Engagements:</span> Swimming, Badminton</div>
+        </div>
+    </div>
+</body>
+</html>
